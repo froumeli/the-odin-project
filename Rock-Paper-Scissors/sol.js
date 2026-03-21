@@ -9,14 +9,8 @@ function getComputerChoice() {
     else return "scissors";
 }
 
-function getHumanChoice() {
-    let input = prompt("What do you choose?");
-    return input;
-}
-
 function playRound(humanScore, computerScore) {
     let computerChoice = getComputerChoice();
-    let humanChoice = getHumanChoice().toLowerCase();
 
     // Human chooses rock
     if(humanChoice == "rock") {
